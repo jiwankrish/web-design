@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-linting-lightning": "^0.0.7"
+  }
+}
