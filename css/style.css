@@ -38,6 +38,17 @@ main {
   padding: 20px;
 }
 
+section dl dd {
+  font-size: 16px;
+  /* Font size for paragraphs */
+  line-height: 1.5;
+  /* Line height for better readability */
+  color: #555;
+  /* Text color for paragraphs */
+  max-width: 948px;
+  /* Set the maximum width for paragraphs */
+}
+
 /* Style for headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Arial", sans-serif;
@@ -56,6 +67,10 @@ p {
   /* Line height for better readability */
   color: #555;
   /* Text color for paragraphs */
+  max-width: 948px;
+  /* Set the maximum width for paragraphs */
+  word-wrap: break-word;
+  /* Add this line to enable text wrapping */
 }
 
 /* Define styles for links */
@@ -127,4 +142,9 @@ a:hover {
   /* Align the text to the left within the paragraph */
   display: block;
   /* Ensure the paragraph is displayed as a block element */
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
