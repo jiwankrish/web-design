@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 
 /* Define a background color for the header and footer */
 header, footer {
-  background-color: #333333;
+  background-color: #191a19;
   /* Replace with your desired background color */
   color: #fff;
   /* Text color for header and footer */
@@ -81,7 +81,7 @@ a:link {
 }
 
 a:visited {
-  color: #c1b1b1;
+  color: #ffffff;
   /* Visited link color */
 }
 
