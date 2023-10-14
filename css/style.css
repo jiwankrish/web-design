@@ -144,10 +144,13 @@ a:hover {
   /* Ensure the paragraph is displayed as a block element */
 }
 
-.responsive-image {
-  max-width: 100%;
-  height: auto;
+.index-specific {
+	width: 100%;
+    height: auto;
+    max-width: 900px; /* Optional: limit the maximum width */
+    max-height: 540px; /* Optional: limit the maximum height */
 }
+
 
 
 /* Center the form horizontally */
