@@ -1,0 +1,62 @@
+/* Float images left and right */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.image-article h2 {
+  text-align: left; /* Left-align H2 */
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.image-article figure {
+  flex: 0 0 calc(50% - 20px); /* 50% width with spacing */
+  margin: 5px; /* Add spacing between figure elements */
+  text-align: center;
+  max-width: 900px; /* Optional: limit the maximum width */
+  max-height: 540px; /* Optional: limit the maximum height */
+}
+
+.image-article figcaption {
+text-align: center; /* Center-align the caption */
+text-decoration: underline;
+font-weight: bold;
+margin-top: 5px; /* Add some space between the image and caption */
+margin-bottom: 10px;
+}
+
+.image-article {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: -50px;
+  border: 2px navy solid;
+  max-width: 100%; /* Allow the boxes to be responsive */
+}
+
+/* Float the image to the left and content to the right */
+.image-article img {
+  float: left;
+  max-width: 50%; /* Adjust the width of the image as needed */
+}
+
+.image-article p {
+  margin-left: 50%; /* Create space for the image on the left */
+  margin-bottom: 10px;
+}
+
+/* Clear floats after the article boxes */
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  clear: both; /* Clear floats in the footer to ensure it appears at the bottom */
+  text-align: center; /* Center-align the footer content */
+}

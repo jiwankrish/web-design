@@ -146,9 +146,9 @@ a:hover {
 
 .index-specific {
 	width: 100%;
-    height: auto;
-    max-width: 900px; /* Optional: limit the maximum width */
-    max-height: 540px; /* Optional: limit the maximum height */
+  height: auto;
+  max-width: 900px; /* Optional: limit the maximum width */
+  max-height: 540px; /* Optional: limit the maximum height */
 }
 
 
