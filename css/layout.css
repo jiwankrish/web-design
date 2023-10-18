@@ -1,62 +1,52 @@
-/* Float images left and right */
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.image-article h2 {
-  text-align: left; /* Left-align H2 */
-  font-weight: bold;
-  font-style: italic;
-  margin-bottom: 5px;
-}
-
-.image-article figure {
-  flex: 0 0 calc(50% - 20px); /* 50% width with spacing */
-  margin: 5px; /* Add spacing between figure elements */
-  text-align: center;
-  max-width: 900px; /* Optional: limit the maximum width */
-  max-height: 540px; /* Optional: limit the maximum height */
-}
-
-.image-article figcaption {
-text-align: center; /* Center-align the caption */
-text-decoration: underline;
-font-weight: bold;
-margin-top: 5px; /* Add some space between the image and caption */
-margin-bottom: 10px;
-}
-
-.image-article {
-  box-sizing: border-box;
-  margin: 2px;
-  padding: -50px;
-  border: 2px navy solid;
-  max-width: 100%; /* Allow the boxes to be responsive */
-}
-
-/* Float the image to the left and content to the right */
-.image-article img {
-  float: left;
-  max-width: 50%; /* Adjust the width of the image as needed */
-}
-
-.image-article p {
-  margin-left: 50%; /* Create space for the image on the left */
-  margin-bottom: 10px;
-}
-
-/* Clear floats after the article boxes */
-.main::after {
+/* Clear floats for article containers */
+.image-article:after {
   content: "";
   display: table;
   clear: both;
 }
 
-footer {
-  clear: both; /* Clear floats in the footer to ensure it appears at the bottom */
-  text-align: center; /* Center-align the footer content */
+.image-article {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border: 2px navy solid;
+}
+
+.image-article figure {
+  margin: 10px;
+  max-width: 100%;
+  /* Ensure figures are responsive to their containers */
+  text-align: center;
+  float: left;
+  /* Float the figure to the left */
+  width: 50%;
+  /* Make the figure take up half of the container */
+  box-sizing: border-box;
+}
+
+.image-article.right figure {
+  float: right;
+  /* Float the figure to the right for every other image */
+}
+
+.image-article img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  /* Make the image take up the full width of the figure container */
+}
+
+.image-article figcaption {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.image-article p {
+  max-width: 100%;
+  margin-left: 0;
+  margin-bottom: 10px;
 }
