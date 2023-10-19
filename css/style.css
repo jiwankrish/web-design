@@ -8,28 +8,46 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* Define a background color for the header and footer */
-header, footer {
-  background-color: #191a19;
-  /* Replace with your desired background color */
-  color: #fff;
-  /* Text color for header and footer */
-  padding: 4px;
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  font-size: 17px;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
+/* Style the links inside the navigation bar */
+footer a {
+  color: #f2f2f2;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #fff;
-  /* Link color for the navigation menu */
+  font-size: 17px;
 }
+
+footer a:link {
+  color: #37f2ff;
+  /* Link color */
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 0px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Style for the logo */
+#logo {
+  position: fixed;
+  top: 0px;
+  /* Adjust the top position as needed */
+  right: 0px;
+  /* Adjust the right position as needed */
+  z-index: 2;
+  /* Ensure the logo appears above other elements */
+  width: 48px;
+  /* Adjust the width of the logo as needed */
+}
+
 
 /* Style for the main content area */
 main {
@@ -81,7 +99,7 @@ a:link {
 }
 
 a:visited {
-  color: #ffffff;
+  color: #e0919175;
   /* Visited link color */
 }
 
@@ -145,13 +163,13 @@ a:hover {
 }
 
 .index-specific {
-	width: 100%;
+  width: 100%;
   height: auto;
-  max-width: 900px; /* Optional: limit the maximum width */
-  max-height: 540px; /* Optional: limit the maximum height */
+  max-width: 900px;
+  /* Optional: limit the maximum width */
+  max-height: 540px;
+  /* Optional: limit the maximum height */
 }
-
-
 
 /* Center the form horizontally */
 form {
