@@ -2,9 +2,12 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/nav-menu.css">
         <title>Contact Us - Carrot Top</title>
         <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png" />
@@ -28,10 +31,10 @@
 
     <body>
         <nav class="topnav">
-            <a class="active" href="index.html"">Home</a>
-          <a href=" faqs.html">FAQs</a>
+            <a href="index.html">Home</a>
+            <a href=" faqs.html">FAQs</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact-us.html">Contact Us</a>
+            <a class="active" href="contact-us.html">Contact Us</a>
         </nav>
         <header>
             <img src="images/logo_carrot.png" id="logo" alt="Carrot Top Logo">
@@ -39,87 +42,114 @@
         </header>
 
         <main>
-            <section>
-                <form action="mailto:your.email@example.com" method="post">
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone" required>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-
-                        <label>Preferred Contact Method:</label>
-                        <div class="radio-container">
-                            <input type="radio" id="contact-email" name="contact-method" value="email">
-                            <label class="radio-label" for="contact-email">Email</label>
-
-                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                            <label class="radio-label" for="contact-phone">Phone</label>
+            <div class="w3-container">
+                <form class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-auto w3-border">
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
                         </div>
+                    </div>
 
-                        <label>Subscribe to Newsletter:</label>
-                        <div class="subscribe-container">
-                            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                            <label for="subscribe">Yes, subscribe me to the newsletter</label>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
                         </div>
+                    </div>
 
-                        <label for="country">Country:</label>
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                        <div class="w3-rest">
+                            <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-section">
+                        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                        <div class="w3-rest">
+                            <textarea class="w3-input w3-border" name="message" type="text" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="w3-row w3-section">
+                        <h3>Preffered Contact Method:</h3>
+                        <p>
+                            <input class="w3-radio" type="radio" name="contact" value="phone" checked>
+                            <label>Phone</label>
+                        </p>
+                        <p>
+                            <input class="w3-radio" type="radio" name="contact" value="email">
+                            <label>Email</label>
+                        </p>
+                    </div>
+
+                    <div class="w3-row w3-section">
+                        <h3>Select Country:</h3>
                         <select id="country" name="country">
-                            <option value="usa">United States</option>
+                            <option value="australia">Australia</option>
                             <option value="canada">Canada</option>
-                            <option value="uk">United Kingdom</option>
-                            <!-- Add more options as needed -->
+                            <option value="usa">USA</option>
                         </select>
+                    </div>
+                    <div>
+                        <h3>Subscribe to Newsletter:</h3>
+                        <p>
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label>Yes, subscribe me to the newsletter</label>
+                        </p>
+                    </div>
 
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </fieldset>
+                    <button class="w3-button w3-ho w3-section w3-green w3-hover-border-cyan w3-ripple">Submit</button>
+                    <button class="w3-button w3-ho w3-section w3-blue w3-ripple">Reset</button>
                 </form>
-            </section>
-            <table>
-                <caption>Upcoming Tour Dates</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Event</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>March 15, 2023</td>
-                        <td>New York City</td>
-                        <td>Comedy Show</td>
-                    </tr>
-                    <tr>
-                        <td>April 5, 2023</td>
-                        <td>Los Angeles</td>
-                        <td>Stand-up Performance</td>
-                    </tr>
-                    <tr>
-                        <td>May 20, 2023</td>
-                        <td>Chicago</td>
-                        <td>Live Podcast</td>
-                    </tr>
-                    <tr>
-                        <td>June 10, 2023</td>
-                        <td>Miami</td>
-                        <td>Charity Event</td>
-                    </tr>
-                    <tr>
-                        <td>July 8, 2023</td>
-                        <td>Las Vegas</td>
-                        <td>Special Performance</td>
-                    </tr>
-                </tbody>
-            </table>
+            </div>
+            <div class="w3-container">
+                <table class="w3-table w3-bordered w3-striped w3-center w3-auto">
+                    <caption class="w3-text-indigo">Upcoming Tour Dates</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>March 15, 2023</td>
+                            <td>New York City</td>
+                            <td>Comedy Show</td>
+                        </tr>
+                        <tr>
+                            <td>April 5, 2023</td>
+                            <td>Los Angeles</td>
+                            <td>Stand-up Performance</td>
+                        </tr>
+                        <tr>
+                            <td>May 20, 2023</td>
+                            <td>Chicago</td>
+                            <td>Live Podcast</td>
+                        </tr>
+                        <tr>
+                            <td>June 10, 2023</td>
+                            <td>Miami</td>
+                            <td>Charity Event</td>
+                        </tr>
+                        <tr>
+                            <td>July 8, 2023</td>
+                            <td>Las Vegas</td>
+                            <td>Special Performance</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
 
 

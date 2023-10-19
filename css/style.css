@@ -31,11 +31,11 @@ footer a:link {
 
 header {
   margin-bottom: 0px;
+  margin-right: 0px;
   margin-top: 50px;
   text-align: center;
 }
 
-/* Style for the logo */
 #logo {
   position: fixed;
   top: 0px;
@@ -44,10 +44,9 @@ header {
   /* Adjust the right position as needed */
   z-index: 2;
   /* Ensure the logo appears above other elements */
-  width: 48px;
+  width: 53.5px;
   /* Adjust the width of the logo as needed */
 }
-
 
 /* Style for the main content area */
 main {
@@ -78,32 +77,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Style for paragraphs */
-p {
-  font-size: 16px;
-  /* Font size for paragraphs */
-  line-height: 1.5;
-  /* Line height for better readability */
-  color: #555;
-  /* Text color for paragraphs */
-  max-width: 948px;
-  /* Set the maximum width for paragraphs */
-  word-wrap: break-word;
-  /* Add this line to enable text wrapping */
-}
+
 
 /* Define styles for links */
-a:link {
+.faqol a:link {
   color: #0078d4;
   /* Link color */
   text-decoration: none;
 }
 
-a:visited {
+.faqol a:visited {
   color: #e0919175;
   /* Visited link color */
 }
 
-a:hover {
+.faqol a:hover {
   color: #ff6600;
   /* Link color on hover */
   text-decoration: underline;
@@ -169,132 +157,4 @@ a:hover {
   /* Optional: limit the maximum width */
   max-height: 540px;
   /* Optional: limit the maximum height */
-}
-
-/* Center the form horizontally */
-form {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for form labels */
-label {
-  display: block;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-/* Style for input fields */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-/* Style for radio buttons and text boxes */
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-  /* Change width to 'auto' to allow them to take their natural width */
-  padding: 5px;
-  margin: 0 5px 0 0;
-  /* Adjust margin for spacing */
-  vertical-align: middle;
-  /* Align them vertically */
-}
-
-/* Style for radio buttons and their labels */
-.radio-container {
-  display: inline-flex;
-  /* Use inline-flex to place them on the same line */
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.radio-label {
-  margin-right: 60px;
-  /* Adjust margin for spacing */
-}
-
-.subscribe-container {
-  display: inline-flex;
-  /* Use inline-flex to place them on the same line */
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-/* Style for submit and reset buttons */
-input[type="submit"],
-input[type="reset"] {
-  background-color: #0078d4;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: #005ea2;
-}
-
-/* Style for the table */
-table {
-  width: 50%;
-  margin: 20px auto;
-  /* Center the table horizontally */
-  border-collapse: collapse;
-  /* Collapse borders into a single border */
-  border: 1px solid #ccc;
-  /* Add a border around the table */
-}
-
-/* Style for table caption */
-table caption {
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-}
-
-/* Style for table headers (th) */
-table th {
-  background-color: #0078d4;
-  /* Header background color */
-  color: #fff;
-  /* Header text color */
-  padding: 10px;
-  text-align: left;
-  border: 1px solid #ccc;
-}
-
-/* Style for table data cells (td) */
-table td {
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-/* Style for odd rows (striped effect) */
-table tbody tr:nth-child(odd) {
-  background-color: #f5f5f5;
-}
-
-/* Hover effect on table rows */
-table tbody tr:hover {
-  background-color: #ddd;
 }
