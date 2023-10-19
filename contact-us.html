@@ -43,39 +43,39 @@
 
         <main>
             <div class="w3-container">
-                <form class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-auto w3-border">
+                <form action="mailto:your.email@example.com" method="post" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-auto w3-border">
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
                         <div class="w3-rest">
-                            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name">
+                            <input class="w3-input w3-border" name="first" type="text" placeholder="First Name" required>
                         </div>
                     </div>
 
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
                         <div class="w3-rest">
-                            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+                            <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name" required>
                         </div>
                     </div>
 
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
                         <div class="w3-rest">
-                            <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                            <input class="w3-input w3-border" name="email" type="email" placeholder="Email" required>
                         </div>
                     </div>
 
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
                         <div class="w3-rest">
-                            <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                            <input class="w3-input w3-border" name="phone" type="phone" placeholder="Phone" required>
                         </div>
                     </div>
 
                     <div class="w3-row w3-section">
                         <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-book"></i></div>
                         <div class="w3-rest">
-                            <textarea class="w3-input w3-border" name="message" placeholder="Message"></textarea>
+                            <textarea class="w3-input w3-border" name="message" placeholder="Message" required></textarea>
                         </div>
                     </div>
 
@@ -107,8 +107,10 @@
                         </p>
                     </div>
 
-                    <button class="w3-button w3-ho w3-section w3-green w3-hover-border-cyan w3-ripple">Submit</button>
-                    <button class="w3-button w3-ho w3-section w3-blue w3-ripple">Reset</button>
+                    <button class="w3-button w3-ho w3-section w3-green w3-hover-border-cyan w3-ripple" type="<button type=" submit" [disabled]="!form.form.valid">
+                        Submit
+                    </button>
+                    <button class="w3-button w3-ho w3-section w3-blue w3-ripple" type="reset">Reset</button>
                 </form>
             </div>
             <div class="w3-container">
